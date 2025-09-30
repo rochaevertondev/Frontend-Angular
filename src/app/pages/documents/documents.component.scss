@@ -1,0 +1,14 @@
+.docs-main {
+    /* Define uma largura máxima para o conteúdo não se esticar demais em telas grandes */
+    max-width: 1200px;
+    /* Centraliza o próprio container na tela */
+    margin: 0 auto; 
+    /* Adiciona um padding interno para respirar */
+    padding: 20px;
+}
+
+.docs-main h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #343a40;
+}

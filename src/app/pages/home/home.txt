@@ -1,0 +1,29 @@
+home.html
+
+<h1>Home Component</h1>
+<h2>Teste de interpolação de dados</h2>
+<p>Recebendo dados dinamicamente via service:</p>
+<p>Nome: {{ pessoaNome }}</p>
+<p>Idade: {{ pessoaIdade }}</p>
+<hr>
+
+home.ts
+
+import { PessoaService } from '../../services/pessoa.service';
+
+
+export class HomeComponent {
+  pessoaNome = '';
+  pessoaIdade = 0;
+  meuBoolean: boolean = false;
+
+  constructor(private pessoaService: PessoaService) {
+    const pessoa = this.pessoaService.getPessoa();
+    this.pessoaNome = pessoa.nome;
+    this.pessoaIdade = pessoa.idade;
+  }
+  
+  atualizaBoolean(valor: boolean){
+    this.meuBoolean = valor;
+  }
+}
