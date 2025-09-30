@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ArticleComponent } from '../article/article.component';
+import { ArticleComponent } from '../../components/article/article.component';
 
 @Component({
   selector: 'app-documents',
