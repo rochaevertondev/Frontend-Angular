@@ -1,0 +1,16 @@
+<div class="articles">
+  <div class="article-card" *ngFor="let article of articles; let i = index">
+    <h2>{{ article.title }}</h2>
+    
+    <button (click)="toggleArticle(i)">
+      {{ article.expanded ? 'Fechar' : 'Saber mais' }}
+    </button>
+
+    <div 
+      class="article-content"
+      [@expandCollapse]="article.expanded ? 'expanded' : 'collapsed'"
+    >
+      <p *ngFor="let paragraph of article.content">{{ paragraph }}</p>
+    </div>
+  </div>
+</div>

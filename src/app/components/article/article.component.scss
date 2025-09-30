@@ -1,0 +1,40 @@
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.article-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fafafa;
+  transition: box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.article-content {
+  margin-top: 1rem;
+  border-left: 3px solid #007bff;
+  background: #f0f8ff;
+  padding: 0.5rem;
+  border-radius: 4px;
+}

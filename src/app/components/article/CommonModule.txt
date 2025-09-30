@@ -1,0 +1,45 @@
+
+<h1>CommonModule no Angular</h1>
+<p>O <strong>CommonModule</strong> é um módulo que traz várias diretivas, pipes e funcionalidades básicas utilizadas nos
+    templates do Angular.</p>
+
+<h2>Diretivas estruturais</h2>
+<ul>
+    <li><code>*ngIf</code> - Renderiza o elemento se a condição for verdadeira.</li>
+    <li><code>*ngFor</code> - Itera sobre listas de dados.</li>
+    <li><code>ngSwitch</code>, <code>ngSwitchCase</code>, <code>ngSwitchDefault</code> - Escolha condicional entre
+        vários elementos.</li>
+</ul>
+
+<div ngNonBindable class="example">
+    <pre>
+        &lt;div *ngIf="mostrar"&gt;Exibe se 'mostrar' for true&lt;/div&gt;
+        &lt;li *ngFor="let item of lista"&gt;{{ item }}&lt;/li&gt;
+    </pre>
+</div>
+
+<h2>Diretivas de atributo</h2>
+<ul>
+    <li><code>ngClass</code> - Aplica classes dinamicamente.</li>
+    <li><code>ngStyle</code> - Aplica estilos inline dinamicamente.</li>
+</ul>
+<div ngNonBindable class="example">
+    <pre>
+        &lt;div [ngClass]="{{'ativo': isAtivo}}"&gt;Conteúdo&lt;/div&gt;
+        &lt;div [ngStyle]="{{'color': cor}}"&gt;Texto colorido&lt;/div&gt;
+    </pre>
+</div>
+<h2>Pipes básicos</h2>
+<ul>
+    <li><code>DatePipe</code> - Formata datas. Ex: <code>{{ '{{ data | date }}' }}</code></li>
+    <li><code>UpperCasePipe</code> - Converte texto para maiúsculo. Ex: <code>{{ '{{ nome | uppercase }}' }}</code></li>
+    <li><code>LowerCasePipe</code> - Converte texto para minúsculo.</li>
+    <li><code>CurrencyPipe</code> - Formata valores monetários.</li>
+  </ul>
+  <div class="example">
+    <pre>
+        {{ '{{ hoje | date:"dd/MM/yyyy" }}' }}
+        {{ '{{ nome | uppercase }}' }}
+        {{ '{{ preco | currency:"BRL" }}' }}
+    </pre>
+  </div>
