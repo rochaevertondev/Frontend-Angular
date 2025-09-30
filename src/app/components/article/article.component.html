@@ -6,9 +6,11 @@
       {{ article.expanded ? 'Fechar' : 'Saber mais' }}
     </button>
 
-    <div class="article-content" *ngIf="article.expanded">
+    <div 
+      class="article-content"
+      [@expandCollapse]="article.expanded ? 'expanded' : 'collapsed'"
+    >
       <p *ngFor="let paragraph of article.content">{{ paragraph }}</p>
     </div>
   </div>
 </div>
-
