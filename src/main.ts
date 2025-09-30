@@ -6,8 +6,8 @@ import { AppComponent } from './app/app.component';
 bootstrapApplication(AppComponent, {
   ...appConfig,
   providers: [
-    ...appConfig.providers, // mantém os providers que já tinha no appConfig
-    provideAnimations()     // adiciona o suporte a animações
+    ...appConfig.providers, 
+    provideAnimations()     
   ]
 })
 .catch((err) => console.error(err));
