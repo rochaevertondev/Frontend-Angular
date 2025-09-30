@@ -1,20 +1,43 @@
 nav {
+    
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #343a40;
+    background-color: #1d1f1f;
     padding: 1rem;
+
+    
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+   
+    .app-title {
+        color: white;
+        font-size: 2.25rem;
+        font-weight: bold;
+        margin: auto; 
+    }
+
+    
+    .nav-links {
+        display: flex; 
+        margin-right: 50px;
+    }
 
     a {
         color: white;
-        margin-right: 1rem;
+        margin-left: 1rem; 
         text-decoration: none;
 
         &.active {
             font-weight: bold;
             text-decoration: underline;
         }
+    }
+    
+    img {
+        margin-right: 1rem; 
     }
 }
