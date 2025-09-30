@@ -1,0 +1,15 @@
+nav {
+  background-color: #333;
+  padding: 1rem;
+
+  a {
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+
+    &.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+}
