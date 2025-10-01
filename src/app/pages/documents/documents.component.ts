@@ -1,10 +1,10 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ArticleComponent } from '../../components/article/article.component';
 
+
 @Component({
   selector: 'app-documents',
-  imports: [CommonModule, ArticleComponent],
+  imports: [ArticleComponent],
   templateUrl: './documents.component.html',
   styleUrl: './documents.component.scss'
 })

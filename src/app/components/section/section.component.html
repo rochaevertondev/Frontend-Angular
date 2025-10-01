@@ -1,0 +1,25 @@
+<div class="sections">
+    <div class="section-card">
+        <h2>Exemplo - 1</h2>
+        <p> Uso de diretivas if e else:</p>
+        <p>Se a condicional "showMessage" dentro do if for true exibe a mensagem!</p>
+        <p>Senão se a variável showMessage for false não exibe a mensagem!</p>
+        @if(showMessage){
+            <span>Mensagem condicional dentro do if</span>
+        }
+        <p>Variável showMessage = {{ showMessage }}</p>
+        <button (click)="setShowMessage()">{{ !showMessage }}</button>
+    </div>
+    <div class="section-card">
+        <h2>Exemplo - 2</h2>
+        <p> Uso de diretivas if e else:</p>
+        <p>Se a condicional "showMessage" dentro do if for true exibe a mensagem!</p>
+        <p>Senão se a variável showMessage for false não exibe a mensagem!</p>
+        @if(showMessage){
+            <span>Mensagem condicional dentro do if</span>
+        }
+        <p>Variável showMessage = {{ showMessage }}</p>
+        <button (click)="setShowMessage()">{{ !showMessage }}</button>
+    </div>
+</div>
+
